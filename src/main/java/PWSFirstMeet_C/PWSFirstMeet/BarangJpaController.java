@@ -34,6 +34,11 @@ public class BarangJpaController implements Serializable {
         return emf.createEntityManager();
     }
 
+    public BarangJpaController() {
+    }
+    
+    
+
     public void create(Barang barang) throws PreexistingEntityException, Exception {
         EntityManager em = null;
         try {
